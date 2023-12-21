@@ -1,0 +1,189 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container1{
+    width: 400px;
+    padding: 35px;
+
+    .cancel{
+        display: flex;
+        align-items: center;
+        margin-bottom: 50px;
+        button{
+            border: none;
+            border-radius: 50%;
+            font-size: 25px;
+            width: 35px;
+            height: 35px;
+
+        }
+        p{
+            margin-left: 10px;
+            font-size: 20px;
+
+        }
+    }
+
+    h2{
+        font-size: 35px;
+        margin-bottom: 35px;
+
+    }
+    h3{
+        font-size: 26px;
+        opacity: 0.7;
+    }
+
+    .registration{
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+
+        .accond{
+            display: flex;
+            gap: 5px;
+            flex-direction: column;
+            position: relative;
+            label{
+                opacity: 0.7;
+
+            }
+            input{
+               // outline: #287bfa solid 1px;
+                position: relative;
+                height: 40px;
+                border: 1px solid grey;
+                border-radius: 8px;
+                padding-left: 40px;
+                background-color: white;
+                font-size: 15px;
+            }
+            .icon{
+                position:absolute;
+                top: 25px;
+                border-radius: 8px;
+                background-color: rgb(255, 255, 255);
+                width: 40px;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-left: 1px;
+            }
+            .goz{
+                border: none;
+                position:absolute;
+                top: 25px;
+                right: 1px;
+                border-radius: 8px;
+                background-color: rgb(255, 255, 255);
+                width: 40px;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .goz1{
+                    display: none;
+                }
+            }
+        }
+
+        .help{
+            display: flex;
+            align-items: center;
+            
+            .link{
+                margin-left: 130px;
+
+            }
+
+        }
+        .robot{
+            display: flex;
+            align-items: center;
+            width: 200px;
+            height: 70px;
+            border-radius: 6px;
+            background-color: aliceblue;
+            
+            
+        }
+        .submitBtn{
+            width: 100%;
+            height: 40px;
+            background-color: #287bfa;
+            border: none;
+            border-radius: 8px;
+            color: white;
+            font-size: 20px;
+            font-weight: 700;
+            cursor: pointer;
+
+            
+           
+            // display: flex;
+            // gap: 20px;
+        }
+        .btn:hover{
+            transition: all 0.5s;
+            transform: scale(1.01);
+        }
+        .newAccond{
+            width: 100%;
+            height: 40px;
+            background-color: white;
+            border-radius: 8px;
+            color: #287bfa;
+            font-size: 20px;
+            font-weight: 700;
+            border: 1px solid #287bfa;
+
+            .link{
+                text-decoration: none;
+                color: #287bfa;
+               
+            }
+        }
+        .link:hover{
+            text-decoration: none;
+            color: #f7faff;
+           
+        }
+        .newAccond:hover{
+            
+            background-color: #287bfa;
+            color: white  ;
+
+        }
+       
+    }
+}
+
+.btn{
+  
+    
+    cursor: pointer;
+   
+    // display: flex;
+    // gap: 20px;
+}
+.btn:hover{
+    transition: all 0.5s;
+    transform: scale(1.01);
+}
+
+.hidden{
+    display: none;
+}
+#message {
+  color: red;
+  margin-top: 15px;
+}
