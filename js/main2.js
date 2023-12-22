@@ -23,7 +23,17 @@ form.addEventListener("submit", function(event) {
         inputPhone.style.border = "1px solid #ccc";
     }
 
-    
+    if(isNaN(phone)){
+        messagePhone.textContent = "Telefon nomrenizi duzgun daxil edin";
+        messagePhone.style.color = 'red';
+        var inputPhone = document.getElementById("phone");
+        inputPhone.style.border = "1px solid red";
+        return;
+    }else {
+        messagePhone.textContent = ""
+        var inputPhone = document.getElementById("phone");
+        inputPhone.style.border = "1px solid #ccc";
+    }
    
 
     if (email == "") {
